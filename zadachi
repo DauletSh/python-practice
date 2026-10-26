@@ -1,0 +1,673 @@
+# name = input("Введите ваше имя: ")
+# age = int(input("Введите ваш возраст: "))
+
+# Проверка на четность
+# print(f"Привет, {name}! Тебе {age} лет.")
+
+# number = int(input("Ввести загаданное целое число: "))
+
+# if number % 2 == 0:
+#     print(f"Число {number} четное!")
+# else:
+#     print(f"Число {number} нечетное!")
+
+#Калькулятор
+# while True:
+
+#         while True:
+#             try:
+#                 num1 = int(input("Введите первое число "))
+#                 break
+#             except ValueError:
+#                 print("Нужно ввести число")
+
+#         while True:
+#             try:
+#                 num2 = int(input("Введите второе число "))
+#                 break
+#             except ValueError:
+#                 print("Нужно ввести число")
+
+#         sing_list = ["+", "-", "*", "/"]
+#         operation = input("Введите знаки +, -, *, / " )
+
+#         if operation not in sing_list:
+#             print('Нет такого знака')
+            
+#         if operation == "+":
+#             result = num1 + num2
+#             print(f"Ваш результат {result}")
+#         elif operation == "-":
+#             diff = num1 - num2
+#             print(f"Ваш результат {diff}")
+#         elif operation == "*":
+#             mult = num1 * num2
+#             print(f"Ваш результат {mult}")
+#         elif operation == "/":
+#             try:
+#                 priv = num1 / num2
+#                 print(f"Ваш результат {priv}")
+#             except ZeroDivisionError:
+#                 print("Делить на 0 нельзя")
+                
+#         answer = input("Продолжить или нет? да/нет ").lower
+#         if answer == "нет":
+#             print("Всего хорошего!")
+#             break
+    
+
+#Сумма чисел  
+# numbers = [4, 8, 15, 16, 23, 42]
+
+# total = 0
+
+# for number in numbers:
+#     total = total + number
+
+# print(numbers)    
+# print(f"Сумма чисел: {total}")
+
+
+# Максимальное число
+# numbers = [12, 45, 7, 89, 23, 56]
+
+# maximum = numbers[0]
+
+# for number in numbers:
+#     if number > maximum:
+#         maximum = number
+
+
+# print(f"Максимальное число {maximum}")
+
+
+# numbers = [34, 12, 78, 5, 91, 23, -4, 17]
+
+# minimum = numbers [0]
+
+# for number in numbers:
+#     if number < minimum:
+#         minimum = number
+
+# print(f"Минимальное число {minimum}")
+      
+
+# numbers = [45, 12, 89, 3, 67, -8, 24, 100]
+
+# minimum = numbers[0]
+# maximum = numbers[0]
+
+# for number in numbers:
+#     if number < minimum:
+#          minimum = number
+    
+#     if number > maximum:
+#         maximum = number
+        
+
+# print(f"Минимальное число: {minimum}")
+# print(f"Максимальное число: {maximum}") 
+
+
+# numbers = [12, 7, 9, 24, 36, 5, 18, 11, 42, 3]
+
+
+# even_count = 0
+# odd_count = 0
+
+# for number in numbers:
+#     if number % 2 == 0:
+#         even_count += 1
+#     else: odd_count += 1
+
+# print(f"Чётных чисел: {even_count}")
+# print(f"Нечётных чисел: {odd_count}")
+
+
+# numbers = [12, 7, 9, 24, 36, 5, 18, 11, 42, 3]
+
+# even_sum = 0
+# odd_sum = 0
+
+# for number in numbers:
+#     if number % 2 == 0:
+#         even_sum += number
+#     else:
+#         odd_sum += number
+
+# print(f"Сумма чётных чисел равна: {even_sum}")
+# print(f"Сумма нечётных чисел равна: {odd_sum}")
+
+
+# numbers = [15, -7, 0, 23, -12, 8, 0, -3, 42, -1]
+
+
+# positive_count = 0
+# negative_count = 0
+# zero_count = 0
+
+
+# for number in numbers:
+#     if number > 0:
+#         positive_count += 1
+#     elif number < 0:
+#         negative_count += 1
+#     else:
+#         zero_count +=1
+
+# print(f"Положительных чисел: {positive_count}")
+# print(f"Отрицательных чисел: {negative_count}")
+# print(f"Нулей: {zero_count}")
+
+
+# def square(number):
+#     return number **2
+ 
+# result = square(5)
+
+
+# print(result)
+
+
+# def multiply(a, b):
+#     return a*b
+
+# result = multiply(5, 3)
+# print(result)
+
+
+# def check_number(number):
+#     if number > 0:
+#         return "Положительное"
+#     elif number < 0:
+#         return "Отрицательное"
+#     else:
+#         return "Ноль"
+
+
+# print(check_number(10))
+# print(check_number(-5))
+# print(check_number(0))
+
+
+# numbers = [12, 7, 9, 24, 36, 5, 18, 11, 42, 3]
+
+# def count_even(numbers):
+#     count = 0
+#     for number in numbers:
+#         if number %2 == 0:
+#             count += 1
+#     return count
+
+# result = count_even(numbers)
+# print(f"Количество четных чисел: {result}")
+
+
+# numbers = [12, 7, 9, 24, 36, 5, 18, 11, 42, 3]
+
+
+# def get_even_numbers(numbers):
+#     even_numbers = []
+#     for number in numbers:
+#         if number %2 == 0:
+#             even_numbers.append(number)
+#     return even_numbers
+
+# result = get_even_numbers(numbers)
+# print(result)
+    
+
+# numbers = [5, 3, 8, 5, 2, 3, 9, 8, 1, 2]
+
+
+# def remove_duplicates(numbers):
+#     not_duplicates_list = []
+#     for number in numbers:
+#         if number not in not_duplicates_list:
+#             not_duplicates_list.append(number)
+#     return not_duplicates_list
+
+# result = remove_duplicates(numbers)
+# print(result)
+
+
+# numbers = [5, 3, 8, 5, 2, 3, 9, 8, 5, 2]
+
+# def count_duplicates(numbers):
+#     counts = {}
+#     for number in numbers:
+#         if number in counts:
+#             counts[number] += 1
+#         else: counts[number] = 1
+#     return counts
+
+# result = count_duplicates(numbers)
+# print(result)
+
+
+
+# numbers = [5, 3, 8, 5, 2, 3, 9, 8, 5, 2, 5, 3]
+
+
+# def most_frequent(numbers):
+#     counts = {}
+#     for number in numbers:
+#         if number in counts:
+#             counts[number] += 1
+#         else:
+#             counts[number] = 1
+#     most_common = None
+#     max_count = 0
+#     for number, count in counts.items():
+#         if count > max_count:
+#             max_count = count
+#             most_common = number
+
+#     return most_common, max_count
+
+# number, count = most_frequent(numbers)
+
+# print(f"Самое частое число: {number}")
+# print(f"Количество повторений: {count}")
+
+
+# numbers = [15, 42, 8, 91, 23, 67, 91, 34]
+
+# def second_max(numbers):
+#     first_maximum = None
+#     second_maximum = None
+    
+#     for number in numbers:
+#         if first_maximum is None or number > first_maximum:
+#            second_maximum = first_maximum
+#            first_maximum = number
+#         elif number < first_maximum and (second_maximum is None or number > second_maximum):
+#             second_maximum = number
+    
+#     return second_maximum
+
+# result = second_max(numbers)
+
+# print(f"Второе максимальное число {result}")
+
+
+#text = "Hello Python Programming"
+
+
+
+# def count_vowls(text):
+#     vowels = "aeiou"
+#     count = 0
+#     for letter in text.lower():
+#         if letter in vowels:
+#             count += 1
+#     return count
+
+
+# result = count_vowls(text)
+        
+        
+# print(result)
+        
+          
+# text = "Hello Python Programming"
+
+
+# def count_letters(text):
+#     counts = {}
+#     for letter in text.lower():
+#         if letter !=" ":
+            
+#             if letter in counts:
+#                 counts[letter] +=1
+#             else:
+#                 counts[letter] = 1
+        
+#     return counts
+
+# result = count_letters(text)
+
+
+# print(result)
+    
+
+# text = "Hello Python Programming"
+
+
+# def most_frequent_letter(text):
+
+#     counts = {}
+
+#     for letter in text.lower():
+#         if letter !=" ":
+           
+#             if letter in counts:
+#                 counts[letter] +=1
+#             else:
+#                 counts[letter] = 1
+    
+#     most_common = None
+#     max_count = 0
+
+#     for letter, count in counts.items():
+#         if count > max_count:
+#             max_count = count
+#             most_common = letter
+
+#     return most_common, max_count
+
+# most_cmmon, max_count = most_frequent_letter(text)
+
+
+# print(f"Самая частая буква {most_cmmon}")
+# print(f"Количество повторений {max_count}")
+
+
+# text = "Python is an amazing programming language"
+
+# def longest_word(text):
+#     longest = ""
+#     length = 0
+#     for word in text.split():
+#         if len(word) > len(longest):
+#             longest = word
+#             length = len(longest)
+#     return longest, length
+
+# longest, length = longest_word(text)
+
+# print(f"Самое длинное слово {longest}")
+# print(f"Длина слова {length} букв")
+
+
+# text = input("Введите слово, мы проверим это полиндром или нет: ")
+
+# def is_palindrome(text):
+#     text = text.lower()
+#     back_text = text[::-1]
+#     if text == back_text:
+#         return True
+#     else:
+#         return False
+    
+
+# result = is_palindrome(text)
+
+# print(result)
+
+#text = "I love learning Python"
+
+
+# def revers_words(text):
+#     words = []
+#     for word in text.split():
+#         words.append(word)
+#     revers_w =words[::-1]
+#     last_words = " ".join(revers_w)
+#     return last_words
+
+# result = revers_words(text)
+
+# print(result)
+
+
+# text = "Python is a powerful programming language"
+
+# def long_words(text):
+#     long_words = []
+#     for word in text.split():
+#         if len(word) > 5:
+#             long_words.append(word)
+#     return long_words
+
+# result = long_words(text)
+
+# print(result)
+
+
+# text = "Python is a powerful programming language"
+# min_length = int(input("Введите длинну слова: "))
+
+
+# def filter_words(text, min_length):
+#     words = []
+#     for word in text.split():
+#         if len(word) > min_length:
+#            words.append(word)
+#     return words
+
+# result = filter_words(text, min_length)
+
+# print(result)
+
+
+# text = "Python is a powerful programming language"
+
+
+# def filter_words(text, min_length=5):
+#     words = []
+#     for word in text.split():
+#         if len(word) > min_length:
+#            words.append(word)
+#     return words
+
+# result = filter_words(text)
+
+# print(result)
+
+
+# def calculate_price(price, discount = 0, tax = 0):
+#     price_with_discount = price -(price * (discount/100))
+#     price_with_discount_tax = price_with_discount + price_with_discount * (tax/100)
+#     return price_with_discount_tax
+        
+    
+
+# result = calculate_price(price=1000, discount=20, tax=10)
+
+# print(result)
+        
+
+
+# def calculator(a, b, operation):
+#     if operation == "+":
+#         return a + b
+#     elif operation == "-":
+#         return a - b
+#     elif operation == "*":
+#         return a * b
+#     elif operation == "/":
+#         if b == 0:
+#             return "На ноль делть нельзя"
+#         return a / b
+#     else:
+#         return "Не известная операция"
+        
+    
+
+# result = calculator(a =10,b = 5, operation= "*")
+
+# print(result)
+
+
+
+# def calculator(a, b, operation):
+           
+#     if operation == "+":
+#         return a + b
+#     elif operation == "-":
+#         return a - b
+#     elif operation == "*":
+#         return a * b
+#     elif operation == "/":
+#         if b == 0:
+#             return "На ноль делть нельзя" 
+#         return a / b
+#     else:
+#         return "Не известная операция"
+
+
+# while True: 
+    
+#     try:   
+#         a = int(input("Введите первое число: "))
+#         b = int(input("Введите второе чило: "))
+#     except ValueError:
+#             print("Нужно ввести число")
+#             continue    
+#     operation = input("Введите операцдич(+, -, *, /)")
+    
+#     result = calculator (a, b, operation)
+#     print(result)  
+    
+#     answer = input("Продолжить? да/нет ")
+#     if answer == "нет":
+#         print("Программа завершена")
+#         break
+
+# while True:
+#     name = input("Введите имя: ")
+#     if name == "":
+#         print("Вы не ввели имя") 
+#         continue
+#     try:
+#         age = int(input("Введите свой возраст: "))
+#     except ValueError:
+#         print("Необходимо ввести возраст цифрами")
+#         continue
+#     with open("user.txt", "w", encoding="utf-8") as file:
+#         file.write(f"Имя: {name}\n")
+#         file.write(f"Возраст: {age}")
+
+#     print("Даунные успешно сохранены!")
+#     break
+
+
+# def read_user():
+#     try:
+#         with open("users.txt", "r", encoding="utf-8") as file:
+#             data = file.read()
+#     except FileNotFoundError:
+#         return "Файл не найден"
+#     return data
+
+# result = read_user()
+
+# print(result)
+
+        
+# def add_user(name, age):
+#     with open("users.txt", "a", encoding="utf-8") as file:
+#         file.write(f"Имя: {name}, Возраст: {age}\n")
+    
+# add_user("Даулет", 54)
+
+# print("Пользователь сохранен!")
+
+
+# def read_users():
+#     try:
+#         with open("users.txt", "r", encoding="utf-8") as file:
+#             for line in file:
+#                 print(line.rstrip("\n"))
+#     except FileNotFoundError:
+#         print("Файл не найден!")
+
+# read_users()
+
+
+
+# def get_users():
+#     users = []
+
+#     try:
+#         with open("users.txt", "r", encoding="utf-8") as file:
+#             for line in file:
+#                 users.append(line.rstrip("\n"))
+#     except FileNotFoundError:
+#         return "Файл не найден!"
+
+#     return users
+
+# print(get_users())
+
+
+
+
+
+def count_users():
+    count = 0
+    try:
+        with open("users.txt", "r", encoding="utf-8") as file:
+            for line in file:
+                if line.strip():
+                    count += 1        
+    except FileNotFoundError:
+        return "Файл не найден!"
+
+    return count
+
+print(count_users())
+
+
+
+
+
+
+
+
+        
+
+
+
+
+    
+        
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+ 
+
+ 
+
+    
+
+
+
+
+
+
+
+
+
